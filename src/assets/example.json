@@ -1,0 +1,76 @@
+{
+  "location": {
+    "name": "Sofia",
+    "region": "Grad Sofiya",
+    "country": "Bulgaria",
+    "lat": 42.68,
+    "lon": 23.32,
+    "tz_id": "Europe/Sofia",
+    "localtime_epoch": 1557602743,
+    "localtime": "2019-05-11 22:25"
+  },
+  "current": {
+    "last_updated_epoch": 1557602110,
+    "last_updated": "2019-05-11 22:15",
+    "temp_c": 13.0,
+    "temp_f": 55.4,
+    "is_day": 0,
+    "condition": {
+      "text": "Clear",
+      "icon": "//cdn.apixu.com/weather/64x64/night/113.png",
+      "code": 1000
+    },
+    "wind_mph": 5.6,
+    "wind_kph": 9.0,
+    "wind_degree": 100,
+    "wind_dir": "E",
+    "pressure_mb": 1016.0,
+    "pressure_in": 30.5,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 67,
+    "cloud": 0,
+    "feelslike_c": 12.4,
+    "feelslike_f": 54.3,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 0.0,
+    "gust_mph": 6.7,
+    "gust_kph": 10.8
+  },
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2019-05-11",
+        "date_epoch": 1557532800,
+        "day": {
+          "maxtemp_c": 18.8,
+          "maxtemp_f": 65.8,
+          "mintemp_c": 5.7,
+          "mintemp_f": 42.3,
+          "avgtemp_c": 13.4,
+          "avgtemp_f": 56.2,
+          "maxwind_mph": 6.9,
+          "maxwind_kph": 11.2,
+          "totalprecip_mm": 0.0,
+          "totalprecip_in": 0.0,
+          "avgvis_km": 16.1,
+          "avgvis_miles": 9.0,
+          "avghumidity": 64.0,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 7.4
+        },
+        "astro": {
+          "sunrise": "06:09 AM",
+          "sunset": "08:37 PM",
+          "moonrise": "11:55 AM",
+          "moonset": "02:06 AM"
+        }
+      }
+    ]
+  }
+}

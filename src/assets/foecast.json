@@ -1,0 +1,107 @@
+{
+  "location": {
+    "name": "Sofia",
+    "region": "Grad Sofiya",
+    "country": "Bulgaria",
+    "lat": 42.68,
+    "lon": 23.32,
+    "tz_id": "Europe/Sofia",
+    "localtime_epoch": 1557650658,
+    "localtime": "2019-05-12 11:44"
+  },
+  "current": {
+    "last_updated_epoch": 1557649812,
+    "last_updated": "2019-05-12 11:30",
+    "temp_c": 18.0,
+    "temp_f": 64.4,
+    "is_day": 1,
+    "condition": {
+      "text": "Partly cloudy",
+      "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+      "code": 1003
+    },
+    "wind_mph": 5.6,
+    "wind_kph": 9.0,
+    "wind_degree": 100,
+    "wind_dir": "E",
+    "pressure_mb": 1016.0,
+    "pressure_in": 30.5,
+    "precip_mm": 0.0,
+    "precip_in": 0.0,
+    "humidity": 56,
+    "cloud": 25,
+    "feelslike_c": 18.0,
+    "feelslike_f": 64.4,
+    "vis_km": 10.0,
+    "vis_miles": 6.0,
+    "uv": 5.0,
+    "gust_mph": 6.7,
+    "gust_kph": 10.8
+  },
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2019-05-12",
+        "date_epoch": 1557619200,
+        "day": {
+          "maxtemp_c": 21.1,
+          "maxtemp_f": 70.0,
+          "mintemp_c": 7.8,
+          "mintemp_f": 46.0,
+          "avgtemp_c": 14.6,
+          "avgtemp_f": 58.2,
+          "maxwind_mph": 7.6,
+          "maxwind_kph": 12.2,
+          "totalprecip_mm": 3.4,
+          "totalprecip_in": 0.13,
+          "avgvis_km": 18.2,
+          "avgvis_miles": 11.0,
+          "avghumidity": 62.0,
+          "condition": {
+            "text": "Moderate or heavy rain shower",
+            "icon": "//cdn.apixu.com/weather/64x64/day/356.png",
+            "code": 1243
+          },
+          "uv": 6.6
+        },
+        "astro": {
+          "sunrise": "06:08 AM",
+          "sunset": "08:39 PM",
+          "moonrise": "01:07 PM",
+          "moonset": "02:48 AM"
+        }
+      },
+      {
+        "date": "2019-05-13",
+        "date_epoch": 1557705600,
+        "day": {
+          "maxtemp_c": 20.5,
+          "maxtemp_f": 68.9,
+          "mintemp_c": 6.9,
+          "mintemp_f": 44.4,
+          "avgtemp_c": 12.7,
+          "avgtemp_f": 54.9,
+          "maxwind_mph": 12.3,
+          "maxwind_kph": 19.8,
+          "totalprecip_mm": 11.1,
+          "totalprecip_in": 0.44,
+          "avgvis_km": 18.8,
+          "avgvis_miles": 11.0,
+          "avghumidity": 72.0,
+          "condition": {
+            "text": "Patchy rain possible",
+            "icon": "//cdn.apixu.com/weather/64x64/day/176.png",
+            "code": 1063
+          },
+          "uv": 6.2
+        },
+        "astro": {
+          "sunrise": "06:07 AM",
+          "sunset": "08:40 PM",
+          "moonrise": "02:19 PM",
+          "moonset": "03:26 AM"
+        }
+      }
+    ]
+  }
+}

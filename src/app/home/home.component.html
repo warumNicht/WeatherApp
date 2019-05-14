@@ -1,0 +1,70 @@
+<div class="container-fluid align-content-lg-center">
+  <hr>
+
+  <app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-9">
+
+      <img class="logo-img mb-3" src="../../assets/images/weatherLogo.png"/>
+      <input class="form-control" id="city" type="text" (change)="enableButton()" placeholder="Enter city name">
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <button class="btn btn-primary" id="forecast" (click)="showWeather()" disabled>Search</button>
+  </div>
+
+  <div *ngIf="weather">
+
+    <h3>Weather in {{weather.location.name}}</h3>
+
+    <div class="row justify-content-center px-5">
+      <article>
+        <h4>Current</h4>
+        <hr>
+        <div>
+          <p>Current temperature: {{weather.current.temp_c}}&#176;</p>
+          <p>Clouds {{weather.current.cloud}}%</p>
+          <p>Humidity {{weather.current.humidity}}%</p>
+          <img class="weather-img" src="{{weather.current.condition.icon}}" alt="">
+        </div>
+      </article>
+
+      <article>
+        <h4>{{weather.forecast.forecastday[0].date}}</h4>
+        <hr>
+        <div>
+          <p>Min temperature: <span class="min-temp">{{weather.forecast.forecastday[0].day.mintemp_c}}&#176;</span></p>
+          <p>Max temperature: <span class="max-temp">{{weather.forecast.forecastday[0].day.maxtemp_c}}&#176;</span></p>
+          <p>Humidity {{weather.forecast.forecastday[0].day.avghumidity}}%</p>
+          <img class="weather-img" src="{{weather.forecast.forecastday[0].day.condition.icon}}" alt="">
+        </div>
+      </article>
+
+      <article>
+        <h4>{{weather.forecast.forecastday[1].date}}</h4>
+        <hr>
+        <div>
+          <p>Min temperature: <span class="min-temp">{{weather.forecast.forecastday[1].day.mintemp_c}}&#176;</span></p>
+          <p>Max temperature: <span class="max-temp">{{weather.forecast.forecastday[1].day.maxtemp_c}}&#176;</span></p>
+          <p>Humidity {{weather.forecast.forecastday[1].day.avghumidity}}%</p>
+          <img class="weather-img" src="{{weather.forecast.forecastday[1].day.condition.icon}}" alt="">
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div *ngIf="recent">
+    <div class="mb-3">Recently viewed:</div>
+    <div *ngFor="let city of recent">
+      <button class="btn btn-primary recent-city" (click)="showRecent(city)">{{city.cityName}} - {{city.date | date:
+        'dd/MMM/yyyy HH:mm:ss'}}
+      </button>
+
+    </div>
+  </div>
+
+
+

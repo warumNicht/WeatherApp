@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'Exo 2', sans-serif !important;
+  background-color: azure !important;
+}
+.app-title{
+  text-align:center;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  color: blueviolet;
+}
+.recent-city{
+  width: 30%;
+  margin: 5px;
+}
+
+.logo-img{
+  width: 30%;
+}
+
+.weather-img{
+  width: 10%;
+}
+
+.error{
+  color: red;
+  font-weight: bold;
+}
+
+article{
+  display: inline-block;
+  border: solid #7abaff 1px;
+  border-radius: 4px;
+  margin: 25px;
+  padding: 5px;
+  background-color: white;
+}
+
+article img.weather-img{
+  height: 35%;
+  width: auto;
+}
+
+.min-temp{
+  color: blue;
+  font-weight: bold;
+}
+.max-temp{
+  color: red;
+  font-weight: bold;
+}
+
+
+@media (max-width: 766px) {
+  html {
+    font-size: 12px;
+  }
+  .logo-img{
+    width: 80%;
+  }
+
+  .col-9 {
+    min-width: 90%;
+  }
+  .app-title{
+    text-align:center;
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .recent-city{
+    min-width: 90%;
+  }
+
+  article{
+    width: 50%;
+  }
+
+  article div img.weather-img{
+    width: 40%;
+    height: auto;
+  }
+
+}
+
