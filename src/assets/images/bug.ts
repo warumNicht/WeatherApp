@@ -1,3 +1,3 @@
 function a() {
-  return 0;
+  return 55;
 }
