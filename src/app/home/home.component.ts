@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
       recentArr = Array<Link>();
       recentArr.push(link);
     } else {
-      if (recentArr.length < 5) {
+      if (recentArr.length < 23) {
         recentArr.push(link);
       } else {
         this.leftShift(recentArr);
