@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
   private enableButton(): void {
     let forecastButton = document.getElementById('forecast');
     forecastButton.removeAttribute('disabled');
+    console.log('enabled');
   }
 
   private addLink(cityName: string): void {
@@ -70,6 +71,7 @@ export class HomeComponent implements OnInit {
     for (let i = 1; i < recent.length; i++) {
       recent[i - 1] = recent[i];
     }
+    console.log('shifted');
   }
 
 }
